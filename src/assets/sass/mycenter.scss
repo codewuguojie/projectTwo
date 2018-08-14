@@ -1,0 +1,274 @@
+.mycenter{
+    width: 100%;
+    background: #222222;
+    .top{
+        width: 100%;
+        height: 180px;
+        background: url("../../components/my/img/bg_mine.jpg") no-repeat;
+        background-size: cover;
+
+        .top-top{
+            height: 44px;
+            .top-right{
+                float: right;
+                width: 120px;
+                height: 44px;
+                .signIn{
+                    float: left;
+                    width: 56px;
+                    height: 24px;
+                    margin-top: 10px;
+                    line-height: 24px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #fff;
+                    border-radius: 2px;
+                    background: -webkit-linear-gradient(left, #218CF7, #25BEF2); /* Safari 5.1 - 6.0 */
+                    background: -o-linear-gradient(left, #218CF7, #25BEF2); /* Opera 11.1 - 12.0 */
+                    background: -moz-linear-gradient(left, #218CF7, #25BEF2); /* Firefox 3.6 - 15 */
+                    background: linear-gradient(left, #218CF7, #25BEF2); /* 标准的语法 */
+                }
+                .signIned{
+                    float: left;
+                    width: 56px;
+                    height: 24px;
+                    margin-top: 10px;
+                    line-height: 24px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #9FA3B0;
+                    border-radius: 2px;
+                    background: #61687C;
+                }
+                i{
+                    float: right;
+                    width: 44px;
+                    height: 44px;
+                    img{
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                        margin: 11px auto;
+                    }
+                }
+            }
+        }
+        .top-bottom{
+            width: 100%;
+            overflow: hidden;
+            margin-top: 15px;
+            .left{
+                float: left;
+                i{
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                    background: #fff;
+                    border-radius: 50%;
+                    margin-left: 16px;
+                    position: relative;
+                    .imgOne{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                    .imgTwo{
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+                span{
+                    float: left;
+                    margin-top: 15px;
+                    b{
+                        color: #fff;
+                        font-size: 24px;
+                        background: none;
+                    }
+                    .login{
+                        margin-left: 10px;
+                    }
+                    .usermsg{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .right{
+                float: right;
+                height: 100%;
+                font-size: 16px;
+                line-height: 61px;
+                margin-right: 16px;
+                i{
+                    &:before{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .middle{
+        width: 100%;
+        margin-top: -30px;
+        .m-top{
+            width: 90%;
+            height: 130px;
+            margin: 0 5% 10px;
+            color: #fff;
+            overflow: hidden;
+            border-radius: 2px;
+            background: #218CF7;
+            .rex{
+                width: 95%;
+                overflow: hidden;
+                margin: 20px 0 20px 5%;
+                .rex-left{
+                    float: left;
+                    .rexHead{
+                        color: #fff;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+                    .rexMoeny{
+                        color: #fff;
+                        font-size: 28px;
+                    }
+                }
+                .rex-right{
+                    float: right;
+                    width: 60px;
+                    height: 24px;
+                    padding-left: 10px;
+                    border-radius: 2px 0 0 2px;
+                    line-height: 24px;
+                    color: #fff;
+                    font-size: 14px;
+                    background: -webkit-linear-gradient(right, #218CF7, #25BEF2); /* Safari 5.1 - 6.0 */
+                    background: -o-linear-gradient(right, #218CF7, #25BEF2); /* Opera 11.1 - 12.0 */
+                    background: -moz-linear-gradient(right, #218CF7, #25BEF2); /* Firefox 3.6 - 15 */
+                    background: linear-gradient(right, #218CF7, #25BEF2); /* 标准的语法 */
+                }
+            }
+            .earn{
+                clear: both;
+                width: 90%;
+                margin: 0 5%;
+                color: #fff;
+                span{
+                    font-size: 12px;
+                }
+                .yesterday{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .m-bottom{
+            width: 90%;
+            height: 60px;
+            margin: 0 5%;
+            position: relative;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            i{
+                position: absolute;
+                top: 23px;
+                right: 10px;
+            }
+        }
+    }
+    .bottom{
+        width: 90%;
+        height: 430px;
+        background: #393A3F;
+        margin: 0 5%;
+        padding-bottom:  70px;
+        .msg{
+            width: 100%;
+            height: 60px;
+            line-height: 61px;
+            margin: 5px 0;
+            .title{
+                height: 60px;
+                float: left;
+                padding-left: 16px;
+                font-size: 15px;
+                color: #fff;
+                img{
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: text-top;
+                    margin-right: 10px;
+                }
+            }
+            span{
+                float: right;
+                margin-right: 16px;
+                font-size: 12px;
+                color: #9FA3B0;
+                i{
+                    margin-left: 10px;
+                    i:before{
+                    font-size: 12px;
+                    }
+                }
+            }
+            b{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .msg:nth-child(1){
+            margin-top: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .msg:nth-child(7){
+            background: #222222;
+        }
+        .ordermsg{
+            width: 100%;
+            height: 70px;
+            ul{
+                width: 100%;
+                height: 100%;
+                li{
+                    float: left;
+                    height: 100%;
+                    width: 25%;
+                    text-align: center;
+                    dl{
+                        dt{
+                            margin-top: 15px;
+                            font-size: 24px;
+                            i:before{
+                                color: #fff;
+                            }
+                        }
+                        dd{
+                            color: #9FA3B0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .service{
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #9FA3B0;
+            margin-top: 45px;
+            .phone{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

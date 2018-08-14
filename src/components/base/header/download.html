@@ -1,0 +1,272 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>米筹金服</title>
+
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Content-Language" content="zh-CN">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-itunes-app" content="app-id=1156379544">
+
+        <script>
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var os = getMobileOperatingSystem();
+            var param = queryString();
+
+            function init() {
+                // Wechat help message
+                if (userAgent.indexOf('MicroMessenger') !== -1) {
+                    var cover = document.getElementById("wechat-cover");
+                    cover.style.display = 'block';
+                    if (os === "iOS") {
+                        var help = document.getElementById("help-ios");
+                        help.style.display = 'block';
+                    } else {
+                        var help = document.getElementById("help-android");
+                        help.style.display = 'block';
+                    }
+                };
+
+                var webkit = !!userAgent.match(/WebKit/i);
+                /*
+                var iOSSafari = (os === "iOS") 
+                                && webkit 
+                                && !userAgent.match(/CriOS/i) // Chrome
+                                && !userAgent.match(/MQQBrowser/i) // QQ
+                                && !userAgent.match(/QHBrowser/i) // 360 
+                                && !userAgent.match(/UCBrowser/i) // UC 
+                                && !userAgent.match(/baidubrowser/i); // Baidu 
+                                */
+                
+                if (os === "iOS") {
+                    if(param.id) {
+	    	            window.location.href = "micfunding://appinternal.micfinance.com/project?id=" + param.id;		
+                    } else {
+	    	            window.location.href = "micfunding://";		
+                    }
+                } else if (os === "Android") {
+                    if(param.id) {
+	    	            window.location.href = "micfunding://appinternal.micfinance.com/project?id=" + param.id;		
+                    } else {
+	    	            window.location.href = "micfunding://";		
+                    }
+                };
+
+                var p = document.getElementById("button");
+                p.onclick = downloadApp;
+            };
+
+            function queryString() {
+                var query_string = {};
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    // If first entry with this name
+                    if (typeof query_string[pair[0]] === "undefined") {
+                        query_string[pair[0]] = decodeURIComponent(pair[1]);
+                    // If second entry with this name
+                    } else if (typeof query_string[pair[0]] === "string") {
+                        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+                        query_string[pair[0]] = arr;
+                    // If third or later entry with this name
+                    } else {
+                        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+                    }
+                } 
+                return query_string;
+            };
+
+            function getMobileOperatingSystem() {
+                // Windows Phone must come first because its UA also contains "Android"
+                if (/windows phone/i.test(userAgent)) {
+                    return "Windows";
+                }
+                if (/android/i.test(userAgent)) {
+                    return "Android";
+                }
+                // iOS detection from: http://stackoverflow.com/a/9039885/177710
+                if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    return "iOS";
+                }
+                return "unknown";
+            };
+
+            function post(c) {
+                var http = new XMLHttpRequest();
+                var params = "pid=&tag=&ppid=&url=" + encodeURIComponent(window.location.href.split('?')[0]) + "&ref=" + encodeURIComponent(window.location.href.split('?')[0]) + "&from=android&channel=self&uid=0&guid=ce90a9557070b6496af452dfb3d2df8ad3c95dfe9ff559b5&apk=" + c;
+                var url = "https://report.micfinance.com/?" + params;
+                var download = 'http://download.micfinance.com/' + c + '/micfinance.apk';
+                http.open("POST", url, true);
+                http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                http.send();
+
+                window.open(download, '_blank');
+            };
+
+            function toUrl() {
+                var channel = param.c;
+                if (channel) {
+                    console.log(channel);
+                    if (channel === 'eet5yr92' ||
+                        channel === 'efiwj1iu' ||
+                        channel === '4cg14lgi' ||
+                        channel === 'omfm1xkg' ||
+                        channel === 'k0rkj579'
+                    ) {
+                        post(channel);
+                    } else {
+                        window.location.href = 'http://download.micfinance.com/micfinance.apk';
+                    };
+                } else {
+                    window.location.href = 'http://download.micfinance.com/micfinance.apk';
+                };
+            };
+
+            function downloadApp(event) {
+                if(os === 'Android') {
+                    console.log('android');
+                    toUrl();
+                } else if(os === 'iOS') {
+                    console.log('ios');
+                    window.location.href = 'https://itunes.apple.com/us/app/mi-chou-gu-quan/id1156379544?l=zh&ls=1&mt=8';
+                } else {
+                    console.log('unknown');
+                    toUrl();
+                };
+            };
+        </script>
+        <style>
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                background-image: url('background.jpg');
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+                font-size: 16px;
+                color: #717171;
+            }
+            #wechat-cover {
+                z-index: 999;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                display: none;
+                top: 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+            #help-ios, #help-android {
+                z-index: 9999;
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -31px;
+                margin-left: -73px;
+                background: #ff7d2b;
+                border-radius: 3px;
+                text-align: center;
+                padding: 10px;
+            }
+            #help-ios p, #help-android p {
+                font-size: 14px;
+                color: #fff;
+            }
+            .container {
+                z-index: 99;
+                padding-top: 20px;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 80px;
+            }
+            .logo {
+                width: 300px;
+                height: 120px;
+                text-align: center;
+                margin-top: 25%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logo .icon {
+                width: 90px;
+                height: 90px;
+                margin-left: auto;
+                margin-right: auto;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-image: url('icon@2x.png');
+                background-size: 90px 90px;
+            }
+            .download {
+                z-index: 99;
+                position: absolute;
+                text-align: center;
+                bottom: 100px;
+                left: 50%;
+                width: 300px;
+                margin-left: -150px;
+            }
+            .download .button {
+                margin-top: 50px;
+                width: 300px;
+                height: 50px;
+                text-align: center;
+                border-radius: 3px;
+                background: #ff7d2b;
+                cursor: pointer;
+            }
+            .download .button p {
+                line-height: 50px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body onload="init();">
+        <div id="wechat-cover">
+            <div id="help-ios">
+                <p>请选择右上角的按钮</p>
+                <p>并使用 Safari 打开</p>
+            </div>     
+            <div id="help-android">
+                <p>请选择右上角的按钮</p>
+                <p>并使用浏览器打开</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <div class="icon"></div>
+                <p style="margin: 13px 0 35px 0;">米筹金服</p>
+                <p>筹谋，为每一次价值创造！</p>
+            </div>
+            <div class="download">
+                <div class="button" id="button">
+                    <p>立即下载</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

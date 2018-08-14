@@ -1,0 +1,129 @@
+.reset{
+    .bgpic{
+        display: block;
+        width: 100%;
+        height: 360px;
+    }
+    .bottom{
+        width: 100%;
+        min-height: 588px;
+        background: #f8f8f8;
+        position: absolute;
+        .login-content{
+            width: 800px;
+            height: 560px;
+            background: #fff;
+            border-radius: 8px;
+            margin: -180px auto 0;
+            position: relative;
+            .logo{
+                position: absolute;
+                top: -110px;
+                left: 0;
+                cursor: pointer;
+            }
+            .left{
+                float: left;
+                h2{
+                    font-size: 24px;
+                    margin: 60px 0 60px 240px;
+                    color: #393a3f;
+                }
+                .show{
+                    margin-left: 80px;
+                    .phone{
+                        width: 368px;
+                        border-bottom: 1px solid #ccc;
+                        margin-top: 18px;
+                    }
+                    .phone .input-box{
+                        width:368px;
+                        position: relative;
+                        font-size: 14px;
+
+                    }
+                    .phone  span{
+                        position: absolute;
+                        left: 1px;
+                        top: 27%;
+                        font-size: 14px;
+                        color: #393a3f;
+                        margin-top: -10px;
+                        padding: 10px 14px 10px 0;
+                    }
+                    .phone b{
+                        position: absolute;
+                        right: 1px;
+                        top: 27%;
+                        font-size: 14px;
+                        color: #fb6b38;
+                        cursor: pointer;
+                        img{
+
+                        }
+                    }
+                    .phone .input-box input{
+                        width: 390px;
+                        height: 42px;
+                        padding-left: 108px;
+                        border: 1px solid #eeeeee;
+                        font-size: 14px;
+                        color: #393a3f;
+                        border: 0;
+                    }
+                    input:focus{
+                        outline: 0 !important;
+                    }
+                    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+                        /* WebKit browsers */
+                        color: #dadada;
+                    }
+                    input:-moz-placeholder, textarea:-moz-placeholder {
+                        /* Mozilla Firefox 4 to 18 */
+                        color: #dadada;
+                    }
+                    input::-moz-placeholder, textarea::-moz-placeholder {
+                        /* Mozilla Firefox 19+ */
+                        color: #dadada;
+                    }
+                    input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+                        /* Internet Explorer 10+ */
+                        color: #dadada;
+                    }
+                    .phone .error {
+                        padding-top:12px;
+                        font-size: 12px;
+                        color: #ee2323;
+                        line-height: 12px;
+                        display: none;
+                    }
+                    .phone .error div {
+                        color: #ee2323;
+                        font-size: 12px;
+                    }
+                }
+                button{
+                    width: 366px;
+                    height: 44px;
+                    background: #218cf7;
+                    border: 0;
+                    color: #fff;
+                    margin: 43px 0 20px 80px;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            .right{
+                float: right;
+                margin-right: 40px;
+                .bg{
+                    width: 270px;
+                    height: 230px;
+                    display: block;
+                    margin-top: 115px;
+                }
+            }
+        }
+    }
+
+}

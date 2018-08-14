@@ -1,0 +1,1030 @@
+.order {
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+    /*订单列表*/
+    .box {
+        width: 100%;
+        .top {
+            width: 100%;
+            height: 6.6%;
+            background: #fff;
+            i {
+                padding-left: 15px;
+                font-size: 18px;
+                line-height: 44px;
+            }
+        }
+        .nav {
+            width: 100%;
+            height: 14.2%;
+            background: #fff;
+            margin-bottom: 10px;
+            h1 {
+                padding: 15px;
+                color: #393A3F;
+                font-size: 24px;
+            }
+            ul {
+                width: 100%;
+                height: 35px;
+                li {
+                    float: left;
+                    width: 20%;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    font-size: 15px;
+                    color: #9FA3B0;
+                    p {
+                        width: 70%;
+                        margin: auto;
+                    }
+                    .active {
+                        color: #02abf0;
+                        border-bottom: 1px solid #02abf0;
+                    }
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            height: 79.3%;
+            .outlist {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 158px;
+                height: 150px;
+                img {
+                    display: block;
+                    width: 144px;
+                    height: 98px;
+                    margin: 0 auto;
+                }
+                p {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #61687C;
+                }
+                span{
+                     display: block;
+                     width: 70px;
+                     height: 30px;
+                     background: #218CF7;
+                     color: #fff;
+                     text-align: center;
+                     line-height: 30px;
+                     border-radius: 15px;
+                     margin: 10px auto 0;
+                 }
+            }
+        }
+        .orderlist {
+            width: 100%;
+            height: 79.3%;
+            background: #f8f8f8;
+            .list {
+                width: 100%;
+                background: #fff;
+                overflow: hidden;
+                margin-bottom: 10px;
+                .one {
+                    width: 100%;
+                    overflow: hidden;
+                    .left {
+                        float: left;
+                        padding: 15px 0 15px 15px;
+                        font-size: 14px;
+                        color: #9FA3B0;
+                    }
+                    .right {
+                        float: right;
+                        padding: 15px 15px 15px 0;
+                        font-size: 14px;
+                    }
+                    /*.color1{
+                        color: #FB6B38 ;
+                    }
+                    .color2{
+                        color: #218CF7;
+                    }
+                    .color3{
+                        color: #61687C;
+                    }*/
+                }
+                .two {
+                    clear: both;
+                    width: 100%;
+                    height: 80px;
+                    margin-bottom: 10px;
+                    dl {
+                        width: 100%;
+                        height: 100%;
+                        dt {
+                            float: left;
+                            width: 80px;
+                            height: 80px;
+                            padding-left: 15px;
+                            padding-right: 10px;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        dd {
+                            width: 255px;
+                            float: left;
+                            padding-right: 15px;
+                            .top-list {
+                                width: 100%;
+                                height: 36px;
+                                padding-bottom: 4px;
+                                color: #393A3F;
+                                .l {
+                                    float: left;
+                                    width: 168px;
+                                    height: 100%;
+                                }
+                                .r {
+                                    float: right;
+                                }
+                            }
+                            .bottom-list {
+                                width: 260px;
+                                height: 40px;
+                                .l {
+                                    float: left;
+                                    width: 170px;
+                                    .promsg {
+                                        margin-right: 5px;
+                                        color: #9FA3B0;
+                                    }
+                                }
+                                .r {
+                                    float: right;
+                                    color: #9FA3B0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .three {
+                    text-align: right;
+                    padding-right: 15px;
+                    margin-bottom: 20px;
+                    color: #9FA3B0;
+                    .totalnum {
+                        font-size: 14px;
+                        color: #ff5a5a;
+                    }
+                }
+                .four {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    overflow: hidden;
+                    span {
+                        float: left;
+                        padding-left: 15px;
+                        font-size: 14px;
+                        margin-top: 5px;
+                        color: #9FA3B0;
+                        line-height: 21px;
+                        i {
+                            font-size: 12px;
+                            padding-right: 5px;
+                            &:before {
+                                color: #9FA3B0;
+                            }
+                            img{
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .l {
+                        float: right;
+                        padding-right: 15px;
+                        button {
+                            display: inline-block;
+                            width: 80px;
+                            height: 30px;
+                            border-radius: 15px;
+                            border: 0;
+                            background: #fff;
+                            font-size: 14px;
+                        }
+                        .first {
+                            border: 1px solid #9FA3B0;
+                            color: #9FA3B0;
+                        }
+                        .second {
+                            border: 1px solid #218CF7;
+                            color: #218CF7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*支付页面*/
+    .pay {
+        width: 100%;
+        height: 100%;
+        background: #f8f8f8;
+        .paytop {
+            width: 100%;
+            height: 44px;
+            font-size: 18px;
+            color: #393A3F;
+            line-height: 45px;
+            background: #fff;
+            margin-bottom: 10px;
+            i {
+                margin-left: 5%;
+                vertical-align: text-top;
+            }
+            span {
+                float: left;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                margin-top: -44px;
+                font-weight: bold;
+            }
+        }
+        .paycont {
+            width: 100%;
+            height: 180px;
+            background: #fff;
+            .payorder {
+                width: 100%;
+                p {
+                    width: 95%;
+                    height: 60px;
+                    line-height: 60px;
+                    padding-left: 5%;
+                }
+                .paycode {
+                    font-size: 15px;
+                    span {
+                        font-size: 15px;
+                        color: #1B0000;
+                    }
+                }
+                .paymoney {
+                    font-size: 15px;
+                    span {
+                        font-size: 15px;
+                        color: #FB6B38;
+                    }
+                }
+                .paytips {
+                    font-size: 12px;
+                    color: rgb(255, 144, 76);
+                }
+            }
+            .paytype {
+                width: 100%;
+                background: #fff;
+                margin-top: 10px;
+                .paytitle {
+                    width: 95%;
+                    padding-left: 5%;
+                    font-size: 15px;
+                    line-height: 60px;
+                    height: 60px;
+                }
+                .typeone {
+                    height: 70px;
+                    width: 90%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    .alipay {
+                        font-size: 15px;
+                        float: left;
+                        line-height: 60px;
+                        i {
+                            float: left;
+                            font-size: 22px;
+                            margin-right: 12px;
+                            margin-top: 18px;
+                        }
+                        .wenzi {
+                            float: left;
+                            height: 60px;
+                            line-height: 60px;
+                        }
+                    }
+                    .input {
+                        float: right;
+                        width: 18px;
+                        height: 18px;
+                        border: 1px solid #9FA3B0;
+                        margin: 20px 0;
+                        border-radius: 9px;
+                        position: relative;
+                        img {
+                            width: 18px;
+                            height: 18px;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: #fff;
+                            border-radius: 9px;
+                        }
+                        .icon-selected {
+                            background: #218CF7;
+                        }
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                        }
+                    }
+                }
+                .typetwo {
+                    height: 70px;
+                    width: 90%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    .wepay {
+                        font-size: 15px;
+                        float: left;
+                        line-height: 60px;
+                        i {
+                            float: left;
+                            font-size: 22px;
+                            margin-right: 12px;
+                            margin-top: 18px;
+                        }
+                        .wenzi {
+                            float: left;
+                            height: 60px;
+                            line-height: 60px;
+                        }
+                    }
+                    .input {
+                        float: right;
+                        width: 18px;
+                        height: 18px;
+                        border: 1px solid #9FA3B0;
+                        margin: 20px 0;
+                        border-radius: 9px;
+                        position: relative;
+                        img {
+                            width: 18px;
+                            height: 18px;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: #fff;
+                            border-radius: 9px;
+                        }
+                        .icon-selected {
+                            background: #218CF7;
+                        }
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .paybottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            height: 50px;
+            button {
+                display: block;
+                width: 90%;
+                height: 34px;
+                border: 0;
+                font-size: 16px;
+                color: #fff;
+                margin: 7px auto;
+                border-radius: 17px;
+                background: -webkit-linear-gradient(left, #218CF7, #25BEF2); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(left, #218CF7, #25BEF2); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(left, #218CF7, #25BEF2); /* Firefox 3.6 - 15 */
+                background: linear-gradient(left, #218CF7, #25BEF2); /* 标准的语法 */
+            }
+        }
+    }
+
+    /*申请退款弹框*/
+    .refundpopup {
+        width: 100%;
+        height: 380px;
+        background: #fff;
+        .refund {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .refundtitle {
+                width: 100%;
+                height: 44px;
+                font-size: 16px;
+                color: #393A3F;
+                line-height: 45px;
+                background: #fff;
+                margin-bottom: 10px;
+                i {
+                    line-height: 44px;
+                    float: right;
+                    margin-right: 5%;
+                    vertical-align: text-top;
+                }
+                span {
+                    float: left;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    margin-top: -44px;
+                    font-weight: bold;
+                }
+            }
+            .refundcont {
+                width: 100%;
+                div {
+                    width: 90%;
+                    padding: 0 5%;
+                }
+                .refundone {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    color: #393A3F;
+                    margin-bottom: 10px;
+                }
+                .refundtwo {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                    p {
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #393A3F;
+                    }
+                    select {
+                        width: 268px;
+                        height: 28px;
+                        border: 1px solid #E3E7ED;
+                        background: #fff;
+                    }
+                }
+                .refundthree {
+                    width: 100%;
+                    height: 130px;
+                    border-bottom: 20px;
+                    p {
+                        font-size: 14px;
+                        color: #393A3F;
+                        display: inline-block;
+                    }
+                    textarea {
+                        width: 268px;
+                        height: 98px;
+                        border: 1px solid #E3E7ED;
+                        resize: none;
+                        vertical-align: text-top;
+                    }
+                }
+                .refundfour {
+                    font-size: 14px;
+                    color: #393A3F;
+                }
+                .refundfive {
+                    height: 50px;
+                    background: #fff;
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: 0;
+                    button {
+                        width: 100%;
+                        height: 36px;
+                        display: block;
+                        margin: 7px auto;
+                        border: 0;
+                        border-radius: 18px;
+                        font-size: 15px;
+                        color: #fff;
+                        background: -webkit-linear-gradient(left, #218CF7, #25BEF2); /* Safari 5.1 - 6.0 */
+                        background: -o-linear-gradient(left, #218CF7, #25BEF2); /* Opera 11.1 - 12.0 */
+                        background: -moz-linear-gradient(left, #218CF7, #25BEF2); /* Firefox 3.6 - 15 */
+                        background: linear-gradient(left, #218CF7, #25BEF2); /* 标准的语法 */
+                    }
+                }
+            }
+        }
+    }
+    .refunderrormsg{
+        p{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+            background: rgb(64,64,64);
+            color: #fff;
+        }
+    }
+
+    /*物流追踪*/
+    .logistics {
+        width: 100%;
+        padding-bottom: 20px;
+        background: #f8f8f8;
+        .logistics-top {
+            width: 100%;
+            height: 200px;
+            background: url("../../components/my/img/bg_logistics_background@2x.png");
+            .logistics-title {
+                width: 100%;
+                height: 44px;
+                font-size: 18px;
+                line-height: 45px;
+                background: none;
+                margin-bottom: 10px;
+                i {
+                    margin-left: 5%;
+                    vertical-align: text-top;
+                    &:before {
+                        color: #fff;
+                    }
+                }
+                span {
+                    float: left;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    text-align: center;
+                    margin-top: -44px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .logistics-order {
+            width: 100%;
+            height: 120px;
+            margin-bottom: 15px;
+            dl {
+                width: 90%;
+                height: 100%;
+                background: #fff;
+                border-radius: 4px;
+                margin: -60px auto 0;
+                dt {
+                    float: left;
+                    width: 80px;
+                    height: 80px;
+                    margin: 20px 8px;
+                    border-radius: 4px;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 4px;
+                    }
+                }
+                dd {
+                    float: left;
+                    height: 80px;
+                    margin: 20px 0;
+                    span {
+                        font-size: 14px;
+                        color: #393A3F;
+                        display: block;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+        }
+        .logistics-detail {
+            width: 90%;
+            margin: 0 5%;
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            .firstAddress{
+                width: 90%;
+                margin: 10px 5%;
+                position: relative;
+                height: 70px;
+                .fa-left{
+                    float: left;
+                    width: 80px;
+                    color: #fff;
+                }
+                .fa-middle{
+                    position: absolute;
+                    top: -10px;
+                    left: 81px;
+                    .circle {
+                        width: 10px;
+                        height: 10px;
+                        background: #218CF7;
+                        border-radius: 50%;
+                        margin-top: 50px;
+                    }
+                    .line {
+                        width: 2px;
+                        height: 100px;
+                        margin-left: 4px;
+                        background: #E3E7ED;
+                    }
+                }
+                .fa-right{
+                    float: left;
+                    width: 200px;
+                    padding-top: 30px;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    color: #218CF7;
+                }
+            }
+            .infomation {
+                width: 90%;
+                margin: 10px 5%;
+                position: relative;
+                padding-bottom: 80px;
+                .logistics-left {
+                    float: left;
+                    width: 80px;
+                    padding-top: 30px;
+                    margin-right: 10px;
+                    .time {
+                        font-size: 14px;
+                    }
+                    .day {
+                        font-size: 12px;
+                    }
+                }
+                .logistics-middle {
+                    position: absolute;
+                    top: -10px;
+                    left: 80px;
+                    .circle {
+                        width: 12px;
+                        height: 12px;
+                        background: #E3E7ED;
+                        border-radius: 50%;
+                        margin-top: 50px;
+                        overflow: hidden;
+                        span{
+                            display: block;
+                            width: 6px;
+                            height: 6px;
+                            margin: 3px auto;
+                            border-radius: 50%;
+                            background: #E3E7ED;
+                        }
+                    }
+                    .line {
+                        width: 2px;
+                        height: 100px;
+                        margin-left: 5px;
+                        background: #E3E7ED;
+                    }
+                }
+                .logistics-right {
+                    float: left;
+                    width: 200px;
+                    padding-top: 30px;
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
+            .infomation:nth-child(2){
+                .logistics-left{
+                    .time{
+                        color: #000;
+                    }
+                }
+                .logistics-middle{
+                    .circle{
+                        background: #218CF7;
+                        span{
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*订单详情*/
+    .orderdetail{
+        width: 100%;
+        height: 100%;
+        background: #f8f8f8;
+        .orderheader {
+            width: 100%;
+            height: 160px;
+            background: url("../../components/my/img/bg_order_details_background@2x.png") no-repeat;
+            background-size: cover;
+
+            .header{
+                width: 100%;
+                font-size: 18px;
+                color: #393A3F;
+                background: #fff;
+                line-height: 45px;
+                height: 44px;
+                margin-bottom: 15px;
+                i{
+                    margin-left: 5%;
+                    vertical-align: text-top;
+                }
+                .title{
+                    float: left;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    margin-top: -44px;
+                    font-weight: bold;
+                }
+            }
+            .state{
+                width: 90%;
+                margin: 0 5%;
+                .left{
+                    float: left;
+                    font-size: 18px;
+                    color: #fff;
+                }
+                .right{
+                    float: right;
+                    font-size: 15px;
+                    color: #fff;
+                }
+            }
+        }
+        .middle{
+            width: 100%;
+            background: #f8f8f8;
+            .userone{
+                width: 100%;
+                background: #fff;
+                position: relative;
+                margin-bottom: 10px;
+                .usermsg{
+                    width: 90%;
+                    height: 60px;
+                    margin: 0 5% 30px 5%;
+                    padding: 20px 0 20px 0;
+                    background: #fff;
+                    box-shadow: 0 0 10px #9FA3B0;
+                    border-radius: 4px;
+                    position: absolute;
+                    top: -40px;
+                    .name-phone{
+                        width: 90%;
+                        margin: 0 5% 5px;
+                        font-size: 14px;
+                        color: #393A3F;
+                    }
+                    .useraddress{
+                        width: 90%;
+                        margin: 0 5% 0;
+                        i{
+                            &:before{
+                                line-height: 16px;
+                            }
+                        }
+                        p{
+                            width: 95%;
+                            float: right;
+                        }
+                    }
+
+                }
+                .ordermsg{
+                    width: 90%;
+                    padding: 90px 5% 25px;
+                    height: 80px;
+                    dl{
+                        width: 100%;
+                        height: 100%;
+                        dt{
+                            float: left;
+                            width: 80px;
+                            height: 80px;
+                            img{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 4px;
+                            }
+                        }
+                        dd{
+                            width: 250px;
+                            height: 100%;
+                            float: right;
+                            .ordermsgone{
+                                width: 100%;
+                                height: 36px;
+                                font-size: 14px;
+                                color: #393A3F;
+                                margin-bottom: 10px;
+                                .ordermsg-left{
+                                    width: 180px;
+                                    float: left;
+                                }
+                                .ordermsg-right{
+                                    float: right;
+                                    width: 50px;
+                                    text-align: right;
+                                }
+                            }
+                            .ordermsgtwo{
+                                width: 100%;
+                                font-size: 12px;
+                                color: #9FA3B0;
+                                .ordertype-left{
+                                    float: left;
+                                }
+                                .ordernum{
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ordertotal{
+                    width: 90%;
+                    margin: 0 5%;
+                    padding-bottom: 10px;
+                    overflow: hidden;
+                    font-size: 12px;
+                    color: #9FA3B0;
+                    span{
+                        float: right;
+                        b{
+                            font-size: 16px;
+                            color: #FB6B38;
+                        }
+                    }
+                }
+            }
+            .usertwo{
+                background: #fff;
+                width: 100%;
+                overflow: hidden;
+                padding-bottom: 20px;
+                p{
+                    width: 90%;
+                    margin: 10px 5% 0;
+                    font-size: 14px;
+                    color: #393A3F;
+                    span{
+                        color: #9FA3B0;
+                    }
+                }
+                .dealmsg{
+                    margin-bottom: 40px;
+                }
+            }
+            .userthree{
+                background: #fff;
+                width: 100%;
+                overflow: hidden;
+                padding-bottom: 20px;
+                p{
+                    width: 90%;
+                    margin: 10px 5% 0;
+                    font-size: 14px;
+                    color: #393A3F;
+                    .monrymsg{
+                        float: left;
+                    }
+                    .moneytotal{
+                        color: #9FA3B0;
+                        float: right;
+                    }
+                    .moneysum{
+                        color: #FB6B38;
+                    }
+                }
+            }
+            .userfour{
+                background: #fff;
+                width: 100%;
+                overflow: hidden;
+                padding-bottom: 20px;
+                p{
+                    width: 90%;
+                    margin: 10px 5% 0;
+                    font-size: 14px;
+                    color: #393A3F;
+                    .moneytotal{
+                        color: #9FA3B0;
+                    }
+                    .moneysum{
+                        color: #FB6B38;
+                    }
+                }
+            }
+        }
+        .bottom{
+            width: 100%;
+            height: 50px;
+            .bottom-box{
+                float: right;
+                button{
+                    width: 110px;
+                    height: 30px;
+                    font-size: 15px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    color: #61687C;
+                    border-radius: 15px;
+                    margin: 10px 5px;
+                    &:hover{
+                        background: -webkit-linear-gradient(left, #218CF7, #25BEF2); /* Safari 5.1 - 6.0 */
+                        background: -o-linear-gradient(left, #218CF7, #25BEF2); /* Opera 11.1 - 12.0 */
+                        background: -moz-linear-gradient(left, #218CF7, #25BEF2); /* Firefox 3.6 - 15 */
+                        background: linear-gradient(left, #218CF7, #25BEF2); /* 标准的语法 */
+                        border: 0;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    /*取消订单*/
+    .messagebox{
+        width: 100%;
+        height: 100%;
+        h3{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            color: #393A3F;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn{
+            width: 100%;
+            text-align: center;
+            button{
+                width: 110px;
+                height: 36px;
+                border: 1px solid #9FA3B0;
+                background: #fff;
+                border-radius: 18px;
+                font-size: 14px;
+                color: #61687C;
+                margin-bottom: 20px;
+            }
+            button:nth-child(1){
+                margin-right: 10px;
+            }
+            button:nth-child(2){
+                margin-left: 10px;
+                color: #fff;
+                background: -webkit-linear-gradient(left, #218CF7, #25BEF2); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(left, #218CF7, #25BEF2); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(left, #218CF7, #25BEF2); /* Firefox 3.6 - 15 */
+                background: linear-gradient(left, #218CF7, #25BEF2); /* 标准的语法 */
+            }
+        }
+    }
+
+}
+/*取消订单弹框*/
+.mint-msgbox{
+    border-radius: 10px;
+    background: red;
+}
+.btnconfirm{
+    background: red;
+}

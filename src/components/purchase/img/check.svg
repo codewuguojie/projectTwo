@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="24px" viewBox="0 0 60 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>img_bubble</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="铼米h5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-786.000000, -183.000000)">
+            <g id="img_bubble" transform="translate(786.000000, 183.000000)">
+                <rect id="Rectangle-33" x="0" y="0" width="60" height="24"></rect>
+                <path d="M8.32080536,20.7467939 L1.12287673,23 L3.30049217,16.0435478 C2.564323,14.6247731 2.14837621,13.0131244 2.14837621,11.3043262 C2.14837621,5.61340398 6.76178019,1 12.4527024,1 L48.6956738,1 C54.386596,1 59,5.61340398 59,11.3043262 C59,16.9952484 54.386596,21.6086524 48.6956738,21.6086524 L12.4527024,21.6086524 C10.9832757,21.6086524 9.58568707,21.3010767 8.32080536,20.7467939 Z" id="Combined-Shape" fill="#218CF7" opacity="0.100000001"></path>
+                <text id="点此验证-copy" font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" fill="#218CF7">
+                    <tspan x="8" y="15">点此验证</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

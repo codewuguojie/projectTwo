@@ -1,0 +1,212 @@
+.productList{
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+    .box{
+        width: 100%;
+        .top {
+            width: 100%;
+            height: 6.6%;
+            background: #fff;
+            i {
+                padding-left: 15px;
+                font-size: 18px;
+                line-height: 44px;
+            }
+        }
+        .nav {
+            width: 100%;
+            height: 14.2%;
+            background: #fff;
+            margin-bottom: 10px;
+            h1 {
+                padding: 15px;
+                color: #393A3F;
+                font-size: 24px;
+            }
+            ul {
+                width: 100%;
+                height: 35px;
+                li {
+                    float: left;
+                    width: 16.6%;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    font-size: 15px;
+                    color: #9FA3B0;
+                    p {
+                        width: 70%;
+                        margin: auto;
+                    }
+                    .active {
+                        color: #02abf0;
+                        border-bottom: 1px solid #02abf0;
+                    }
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            height: 79.3%;
+            .outlist {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 158px;
+                height: 150px;
+                img {
+                    display: block;
+                    width: 144px;
+                    height: 98px;
+                    margin: 0 auto;
+                }
+                p {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #61687C;
+                }
+                span{
+                    display: block;
+                    width: 70px;
+                    height: 30px;
+                    background: #218CF7;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 15px;
+                    margin: 10px auto 0;
+                }
+            }
+        }
+        .list-show{
+            width: 100%;
+            .product-box{
+                width: 94%;
+                height: 170px;
+                padding: 10px 3% 0;
+                margin-bottom: 10px;
+                background: #fff;
+                .pro-top{
+                    width: 100%;
+                    height: 22px;
+                    margin-bottom: 10px;
+                    .pro-stateOne{
+                        float: left;
+                        height: 22px;
+                        line-height: 22px;
+                        color: #FB6B38;
+                        padding: 0 5px;
+                        background: rgba(250,102,51,0.1);
+                    }
+                    .pro-stateTwo{
+                        float: left;
+                        height: 22px;
+                        line-height: 22px;
+                        color: #218CF7;
+                        padding: 0 5px;
+                        background: rgba(0,139,243,.1);
+                    }
+                    .pro-stateThree{
+                        float: left;
+                        height: 22px;
+                        line-height: 22px;
+                        color: #218CF7;
+                        padding: 0 5px;
+                        background: rgba(170,173,184,0.1);
+                    }
+                    .pro-day{
+                        float: right;
+                        height: 22px;
+                        padding: 0 5px;
+                        line-height: 22px;
+                        color: #9FA3B0;
+                        span{
+                            color: #FB6B38;
+                        }
+                    }
+                }
+                .pro-describe{
+                    width: 100%;
+                    height: 120px;
+                    dl{
+                        width: 100%;
+                        height: 100%;
+                        dt{
+                            width: 120px;
+                            height: 120px;
+                            float: left;
+                            img{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        dd{
+                            float: right;
+                            width: 215px;
+                            height: 120px;
+                            margin-left: 10px;
+                            .pro-title{
+                                width: 100%;
+                                font-size: 14px;
+                                color: #393A3F;
+                                font-weight: 600;
+                                margin-bottom: 10px;
+                            }
+                            .pro-text{
+                                width: 100%;
+                                font-size: 12px;
+                                color: #9f9f9f;
+                                margin-bottom: 10px;
+                            }
+                            .pro-progress{
+                                width: 100%;
+                                color: #FB6B38;
+                                font-size: 12px;
+                                margin-bottom: 5px;
+                                span{
+                                    font-size: 16px;
+                                    color: #FB6B38;
+                                }
+                            }
+                            .money-progress{
+                                margin-bottom: 5px;
+                            }
+                            .pro-show{
+                                width: 100%;
+                                .pro-left{
+                                    float: left;
+                                    .num{
+                                        display: block;
+                                        font-size: 12px;
+                                    }
+                                    .num-text{
+                                        display: block;
+                                        font-size: 12px;
+                                    }
+                                }
+                                .pro-right{
+                                    float: right;
+                                    .num{
+                                        text-align: right;
+                                        display: block;
+                                        font-size: 12px;
+                                    }
+                                    .num-text{
+                                        display: block;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
